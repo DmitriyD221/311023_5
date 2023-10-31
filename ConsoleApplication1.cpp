@@ -35,32 +35,32 @@ public:
     Class2(const Class2& other) : field2(other.field2) {}
 };
 
-class ñlass3 {
+class Ã±lass3 {
 private:
     string field3;
 public:
-    ñlass3() : field3(" ") {}
-    ñlass3(int value) : field3(to_string(value)) {}
-    ñlass3(double value) : field3(to_string(value)) {}
-    ñlass3(const string& value) : field3(value) {}
+    Ã±lass3() : field3(" ") {}
+    Ã±lass3(int value) : field3(to_string(value)) {}
+    Ã±lass3(double value) : field3(to_string(value)) {}
+    Ã±lass3(const string& value) : field3(value) {}
     void setField3(int value) { field3 = to_string(value); }
     void setField3(double value) { field3 = to_string(value); }
     void setField3(const string& value) { field3 = value; }
     const string& getField3() const { return field3; }
-    ~ñlass3() {}
-    ñlass3(const ñlass3& other) : field3(other.field3) {}
+    ~Ã±lass3() {}
+    Ã±lass3(const Ã±lass3& other) : field3(other.field3) {}
 };
 
 int main() {
     Class1 obj1;
     Class2 obj2;
-    ñlass3 obj3;
+    Ã±lass3 obj3;
     obj1.setField1(42);
     obj2.setField2(3.14);
-    obj3.setField3("Ïðèâiò, Ñâiò!");
+    obj3.setField3("ÐŸÑ€Ð¸Ð²iÑ‚, Ð¡Ð²iÑ‚!!");
     Class1 copy1 = obj1;
     Class2 copy2 = obj2;
-    ñlass3 copy3 = obj3;
+    Ã±lass3 copy3 = obj3;
     cout << "obj1.field1: " << obj1.getField1() << endl;
     cout << "obj2.field2: " << obj2.getField2() << endl;
     cout << "obj3.field3: " << obj3.getField3() << endl;
